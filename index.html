@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gymteca — App de gimnasio para apuntar tus entrenos serie a serie</title>
-<meta name="description" content="Gymteca es la app de gimnasio que registra cada serie, cronometra tu descanso y te dice cuándo subir el peso. Gratis, sin registro y con tus datos solo en tu móvil.">
+<meta name="description" content="Gymteca es la app de gimnasio que registra cada serie, cronometra tu descanso y te dice cuándo subir el peso. Empieza gratis, sin registro y con tus datos solo en tu móvil.">
 <link rel="canonical" href="https://gymteca.com/">
 <meta name="theme-color" content="#0f0f0f">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Gymteca">
 <meta property="og:url" content="https://gymteca.com/">
 <meta property="og:title" content="Gymteca — Tu entreno, serie a serie">
-<meta property="og:description" content="Registra cada serie, descansa con temporizador y deja que el Coach te diga cuándo subir el peso. Gratis y sin registro.">
+<meta property="og:description" content="Registra cada serie, descansa con temporizador y deja que el Coach te diga cuándo subir el peso. Empieza gratis y sin registro.">
 <meta property="og:image" content="https://gymteca.com/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -52,13 +52,18 @@
       "operatingSystem": "iOS, Android, Web",
       "inLanguage": "es",
       "description": "App de gimnasio para registrar entrenamientos serie a serie, con temporizador de descanso, récords personales y un coach que calcula cuándo subir el peso.",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+      "offers": [
+        {"@type": "Offer", "name": "Gratis", "price": "0", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Pro mensual", "price": "3.99", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Pro anual", "price": "29.99", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Pro de por vida", "price": "59.99", "priceCurrency": "USD"}
+      ],
       "publisher": {"@id": "https://gymteca.com/#org"}
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "¿Gymteca es gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Puedes usar Gymteca gratis y sin crear ninguna cuenta."}},
+        {"@type": "Question", "name": "¿Gymteca es gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Tiene un plan gratis para siempre con registro ilimitado y la biblioteca de ejercicios. Gymteca Pro añade el Coach, la periodización y las estadísticas avanzadas por 3,99 $ al mes, 29,99 $ al año o 59,99 $ de por vida, con 14 días de prueba gratis. Durante el lanzamiento en la web, Pro está incluido gratis."}},
         {"@type": "Question", "name": "¿Dónde se guardan mis datos?", "acceptedAnswer": {"@type": "Answer", "text": "Solo en tu móvil. Gymteca no tiene servidores con tus entrenos: no los vemos, no los vendemos y no salen de tu dispositivo."}},
         {"@type": "Question", "name": "¿Qué pasa si cambio de móvil?", "acceptedAnswer": {"@type": "Answer", "text": "Desde Ajustes puedes exportar una copia de seguridad y luego importarla en el móvil nuevo. También puedes exportar tus registros a CSV."}},
         {"@type": "Question", "name": "¿Está en App Store y Google Play?", "acceptedAnswer": {"@type": "Answer", "text": "Todavía no. De momento se instala desde el navegador en gymteca.app y funciona como una app más en la pantalla de inicio."}}
@@ -77,6 +82,7 @@
     <ul class="nav-links">
       <li><a href="#funciones">Funciones</a></li>
       <li><a href="#como-funciona">Cómo funciona</a></li>
+      <li><a href="#precios">Precios</a></li>
       <li><a href="#instalar">Instalar</a></li>
       <li><a href="#preguntas">Preguntas</a></li>
     </ul>
@@ -89,7 +95,7 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">● App de gimnasio · gratis</span>
+      <span class="eyebrow">● Lanzamiento · Pro gratis</span>
       <h1>Tu entreno,<br><span>serie a serie.</span></h1>
       <p class="lead">Apunta cada serie con un toque, descansa con el temporizador y deja que el Coach te diga cuándo subir el peso. Sin libretas, sin hojas de cálculo y sin crear cuentas.</p>
       <div class="cta">
@@ -132,7 +138,7 @@
 
     <article class="feature rev">
       <div>
-        <h3>Un Coach que sabe cuándo subir el peso</h3>
+        <h3>Un Coach que sabe cuándo subir el peso <span class="badge-pro">PRO</span></h3>
         <p>Gymteca analiza tus últimas sesiones y te propone el objetivo de cada ejercicio: subir carga, buscar una repetición más o mantener. Siempre con el porqué.</p>
         <ul>
           <li>Doble progresión: primero repeticiones, luego peso</li>
@@ -183,7 +189,7 @@
       </div>
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v6M8 10l4 1 4-1M10 21l2-7 2 7"/></svg></div>
-        <h3>Mapa muscular 3D</h3>
+        <h3>Mapa muscular 3D <span class="badge-pro">PRO</span></h3>
         <p>Mira qué músculos estás entrenando de más o de menos en la última semana, el último mes o el ciclo.</p>
       </div>
       <div class="card">
@@ -242,7 +248,86 @@
   </div>
 </section>
 
-<section id="instalar" class="alt">
+<section id="precios" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Precios</p>
+      <h2>Empieza gratis. Pasa a Pro cuando quieras.</h2>
+      <p>El plan gratis es para siempre. Pro añade el Coach y todo lo que te ayuda a progresar sin pensar en números.</p>
+    </div>
+
+    <div class="launch">
+      <span aria-hidden="true">🚀</span>
+      <p><strong>Oferta de lanzamiento:</strong> mientras Gymteca se usa desde la web, todas las funciones Pro están incluidas gratis y sin tarjeta. Los planes de pago empezarán cuando llegue a App Store y Google Play, siempre con 14 días de prueba.</p>
+    </div>
+
+    <div class="cur" role="group" aria-label="Moneda">
+      <button type="button" data-cur="usd" aria-pressed="true">$ USD</button>
+      <button type="button" data-cur="eur" aria-pressed="false">€ EUR</button>
+    </div>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>Gratis</h3>
+        <p class="desc">Todo lo básico para apuntar tus entrenos.</p>
+        <div class="price"><b data-usd="$0" data-eur="0 €">$0</b><span>para siempre</span></div>
+        <p class="price-note">Sin tarjeta ni registro</p>
+        <ul>
+          <li>Registro ilimitado de series y rutinas</li>
+          <li>Biblioteca de más de 45 ejercicios en 3D</li>
+          <li>Temporizador de descanso</li>
+          <li>Récords personales en vivo</li>
+          <li>Copia de seguridad y exportar a CSV</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://gymteca.app/">Empezar gratis</a>
+      </div>
+
+      <div class="plan">
+        <h3>Pro mensual</h3>
+        <p class="desc">Todo lo de Gratis, más el entrenador inteligente.</p>
+        <div class="price"><b data-usd="$3.99" data-eur="3,99 €">$3.99</b><span>/ mes</span></div>
+        <p class="price-note">14 días de prueba gratis</p>
+        <ul>
+          <li>Coach que propone peso y repeticiones</li>
+          <li>Periodización: ciclos de 4 semanas y semana de descarga</li>
+          <li>Estadísticas avanzadas: mapa muscular 3D y fuerza estimada</li>
+          <li class="soon">Respaldo en la nube (próximamente)</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://gymteca.app/">Probar Pro gratis</a>
+      </div>
+
+      <div class="plan best">
+        <span class="tag">Mejor precio</span>
+        <h3>Pro anual</h3>
+        <p class="desc">Todo Pro durante un año completo.</p>
+        <div class="price"><b data-usd="$29.99" data-eur="29,99 €">$29.99</b><span>/ año</span></div>
+        <p class="price-note" data-usd="Equivale a $2.50 al mes · ahorras un 37 %" data-eur="Equivale a 2,50 € al mes · ahorras un 37 %">Equivale a $2.50 al mes · ahorras un 37 %</p>
+        <ul>
+          <li>Todo lo de Pro mensual</li>
+          <li>14 días de prueba gratis</li>
+          <li>Un solo pago al año</li>
+        </ul>
+        <a class="btn btn-primary" href="https://gymteca.app/">Probar Pro gratis</a>
+      </div>
+
+      <div class="plan">
+        <h3>Pro de por vida</h3>
+        <p class="desc">Paga una vez y olvídate de suscripciones.</p>
+        <div class="price"><b data-usd="$59.99" data-eur="59,99 €">$59.99</b><span>pago único</span></div>
+        <p class="price-note">Precio de lanzamiento</p>
+        <ul>
+          <li>Todo lo de Pro, para siempre</li>
+          <li>Todas las mejoras futuras de Pro</li>
+          <li>Sin renovaciones</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://gymteca.app/">Empezar gratis</a>
+      </div>
+    </div>
+    <p class="plans-foot">Precios orientativos en dólares o euros. En App Store y Google Play verás el precio en tu moneda local, que puede incluir impuestos. Las suscripciones se gestionan y cancelan desde tu cuenta de Apple o Google.</p>
+  </div>
+</section>
+
+<section id="instalar">
   <div class="wrap">
     <div class="section-head">
       <p class="kicker">Instalar</p>
@@ -281,7 +366,8 @@
       <h2>Lo que nos suelen preguntar.</h2>
     </div>
     <div class="faq">
-      <details><summary>¿Gymteca es gratis?</summary><p>Sí. Puedes usar Gymteca gratis y sin crear ninguna cuenta.</p></details>
+      <details><summary>¿Gymteca es gratis?</summary><p>Tiene un plan gratis para siempre, con registro ilimitado y la biblioteca de ejercicios. Gymteca Pro añade el Coach, la periodización y las estadísticas avanzadas, con 14 días de prueba gratis. Ahora, durante el lanzamiento en la web, Pro está incluido gratis.</p></details>
+      <details><summary>¿Cómo cancelo la suscripción?</summary><p>Cuando Gymteca esté en las tiendas, las suscripciones se pagan y cancelan desde tu cuenta de Apple (App Store) o de Google (Google Play), en cualquier momento. Si cancelas durante los 14 días de prueba, no se te cobra nada.</p></details>
       <details><summary>¿Necesito registrarme?</summary><p>No. Abres gymteca.app y empiezas a entrenar. No te pedimos correo, contraseña ni ningún dato personal.</p></details>
       <details><summary>¿Dónde se guardan mis datos?</summary><p>Solo en tu móvil, en el almacenamiento del navegador. Gymteca no tiene servidores con tus entrenos: no los vemos, no los vendemos y no salen de tu dispositivo.</p></details>
       <details><summary>¿Qué pasa si cambio de móvil o borro el navegador?</summary><p>Como los datos viven en tu móvil, si borras los datos del navegador se pierden. Desde Ajustes puedes exportar una copia de seguridad cuando quieras e importarla después en otro móvil. Te recomendamos hacer una copia de vez en cuando.</p></details>
@@ -295,7 +381,7 @@
 <section class="final alt">
   <div class="wrap">
     <h2>Tu próxima sesión empieza aquí.</h2>
-    <p>Gratis, sin registro y lista en segundos.</p>
+    <p>Empieza gratis, sin registro y en segundos.</p>
     <div class="cta"><a class="btn btn-primary" href="https://gymteca.app/">Abrir Gymteca →</a></div>
   </div>
 </section>
@@ -313,6 +399,7 @@
       <ul>
         <li><a href="https://gymteca.app/">Abrir la app</a></li>
         <li><a href="/#funciones">Funciones</a></li>
+        <li><a href="/#precios">Precios</a></li>
         <li><a href="/#instalar">Instalar</a></li>
         <li><a href="/soporte">Soporte</a></li>
       </ul>
@@ -328,5 +415,24 @@
     <p class="copy">© 2026 Gymteca. Hecho con 💚 para los que no se saltan el día de pierna.</p>
   </div>
 </footer>
+<script>
+// Selector de moneda de la sección de precios (se recuerda en este navegador)
+(function(){
+  var KEY='gymteca-moneda',btns=document.querySelectorAll('[data-cur]');
+  function set(cur){
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.cur===cur));});
+    document.querySelectorAll('[data-usd]').forEach(function(el){el.textContent=el.dataset[cur];});
+    try{localStorage.setItem(KEY,cur);}catch(e){}
+  }
+  var cur=null;
+  try{cur=localStorage.getItem(KEY);}catch(e){}
+  if(cur!=='usd'&&cur!=='eur'){
+    var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';}catch(e){}
+    cur=/^Europe\//.test(tz)?'eur':'usd';
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.cur);});});
+  set(cur);
+})();
+</script>
 </body>
 </html>
