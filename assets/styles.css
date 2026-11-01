@@ -9,7 +9,7 @@
   --bg:#0b1514;--bg2:#11201e;--bg3:#182b28;--bg4:#203632;
   --bg-rgb:11,21,20;
   --border:rgba(238,246,244,.08);--border2:rgba(238,246,244,.14);
-  --text:#eef6f4;--text2:#86a19c;--text3:#557069;
+  --text:#eef6f4;--text2:#86a19c;--text3:#79948f;
   --green:#4fe3c1;--green2:#80ecd3;--green-rgb:79,227,193;
   --green-bg:rgba(var(--green-rgb),.1);--green-b:rgba(var(--green-rgb),.32);
   --accent-ink:#062320;
@@ -113,7 +113,7 @@ h2{font-size:clamp(30px,4.2vw,46px);line-height:1.08;letter-spacing:-1.2px;font-
 .gallery .phone{width:240px;border-radius:36px;padding:8px}
 .gallery .phone img{border-radius:28px}
 .gallery figcaption{font-size:14px;color:var(--text2)}
-@media (min-width:1180px){.gallery{justify-content:center;overflow:visible}}
+@media (min-width:1180px){.gallery{flex-wrap:wrap;justify-content:center;row-gap:36px;overflow:visible}.gallery .phone{width:220px}}
 
 /* Visor de capturas ampliadas */
 .phone img{cursor:zoom-in}
